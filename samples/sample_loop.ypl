@@ -1,0 +1,23 @@
+set welcome <- "Hello world %n";
+dspl welcome;
+
+set x <- 10;
+
+loop x>0:
+@b
+	dspl x;
+	
+	set c <- 0;
+	
+	loop c<x:
+	@b
+		dspl ".";
+		set c <- c+1;
+	@e
+	
+	dspl "%n";
+	
+	set x <- x-1;
+	
+@e
+

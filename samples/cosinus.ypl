@@ -1,0 +1,31 @@
+dspl "Sample program counting value of cosinus function %n";
+
+def cos: angle, prec
+@b
+	set t <- 1.0;
+	set s <- 1.0;
+	set p <- 0;
+	
+	set cPrec <- 1.0;
+	
+	loop cPrec > prec:
+	@b
+		set p <- p+1;
+		set t <- (-t*angle*angle)/((2*p-1)*(2*p));
+		set s <- s+t;
+		
+		set cPrec <- t/s;
+		if cPrec < 0:
+		@b
+			set cPrec <- -cPrec;
+		@e
+		
+	@e
+	
+	dspl s;
+@e
+
+dspl "cos(0.4)=";
+exec cos <- 0.4,0.01;
+dspl "%nhttp://www.wolframalpha.com/input/?i=cos(0.4) <- check ;-)";
+
