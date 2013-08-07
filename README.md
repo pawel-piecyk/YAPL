@@ -1,7 +1,7 @@
 YAPL
 ====
 
-Yet Another Programming Language. My university project of simple interpreted programming language. Syntax is a bit weird but it wasn't the main purpose of class ;-)
+Yet Another Programming Language. My university project of simple interpreted programming language written with Flex, Bison and C++. Syntax is a bit weird but it wasn't the main purpose of class ;-)
 
 Sample code:
 
